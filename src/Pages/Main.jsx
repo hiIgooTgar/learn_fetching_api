@@ -84,7 +84,9 @@ const Main = () => {
               </div>
             ))
           ) : (
-            <p>No users found.</p>
+            <h4 className="text-center col-12 bg-primary p-3 text-white">
+              No News category Techology not found.
+            </h4>
           )}
         </div>
       </div>
