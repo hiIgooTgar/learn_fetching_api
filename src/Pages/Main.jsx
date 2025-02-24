@@ -72,7 +72,13 @@ const Main = () => {
                       </a>
                     </h5>
                     <p className="card-text">{tech.description}</p>
-                    <p className="badge bg-primary">{tech.pubDate}</p>
+                    <p className="badge bg-primary">
+                      {new Date(tech.pubDate).toLocaleDateString("id-ID", {
+                        day: "numeric",
+                        month: "long",
+                        year: "numeric",
+                      })}
+                    </p>
                   </div>
                 </div>
               </div>
